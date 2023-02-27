@@ -1,0 +1,35 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    transition: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgb(188, 188, 188);
+}
+
+input,textarea {
+    border: none;
+    background-color: rgb(227, 227, 227);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}

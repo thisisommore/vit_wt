@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    function add() {
+        const input_num_a = document.getElementById("input_num_a")
+        const input_num_b = document.getElementById("input_num_a")
+        const res = +input_num_a.value + +input_num_b.value
+        alert("Addition is " + res)
+        console.log(res);
+    }
+</script>
+
+<head>
+    <title>Add two num</title>
+</head>
+
+<body>
+    <div>
+        <h1>Add number</h1>
+        <div>
+            <input id="input_num_a" type="number" placeholder="Num A">
+        </div>
+        <div>
+            <input id="input_num_b" type="number" placeholder="Num B">
+        </div>
+        <button onclick="add()">Add</button>
+    </div>
+</body>
+
+</html>

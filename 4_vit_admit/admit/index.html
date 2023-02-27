@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VIT Admission</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+    <h2>Vit Admission</h2>
+    <table>
+        <tr>
+            <td>User name</td>
+            <td><input type="text" id="name" placeholder="Name"></td>
+        </tr>
+        <tr>
+            <td>Phone number</td>
+            <td><input type="number" id="phone_number" placeholder="Phone number"></td>
+        </tr>
+        <tr>
+            <td>Marks</td>
+            <td><input type="number" id="marks_input" placeholder="Marks"></td>
+        </tr>
+        <tr>
+            <td>Birthdate</td>
+            <td><input onchange="onDateChange()" type="date" id="birthdate_input" placeholder="Birthdate"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input disabled type="text" id="age_input" placeholder="Age"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea type="text" id="address_input" placeholder="Address"></textarea></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" id="email_input" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" checked name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+
+    </table>
+    <button onclick="admit()" style="margin-top: 20px;">Done</button>
+</div>
+</body>
+
+</html>

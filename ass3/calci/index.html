@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    function Calculate() {
+        const input_query = document.getElementById("input_query")
+        const res = eval(input_query.value)
+        input_query.value = res
+        console.log(res);
+    }
+
+    function addToInput(q) {
+        const input_query = document.getElementById("input_query")
+        input_query.value += q
+    }
+</script>
+
+<style>
+    input {
+        font-size: 3rem;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .num_btn {
+        border-radius: 100%;
+    }
+
+    .btn_0 {
+        justify-self: center;
+        align-self: center;
+    }
+
+    button {
+        margin: 2px;
+        font-size: 5rem;
+    }
+</style>
+
+<head>
+    <title>Add two num</title>
+</head>
+
+<body>
+    <div>
+        <h1>Calculator</h1>
+        <input type="text" id="input_query">
+        <div class="flex">
+            <div><button class="num_btn" onclick="addToInput(1)">1</button></div>
+            <div><button class="num_btn" onclick="addToInput(2)">2</button></div>
+            <div><button class="num_btn" onclick="addToInput(3)">3</button></div>
+        </div>
+        <div class="flex">
+            <div><button class="num_btn" onclick="addToInput(4)">4</button></div>
+            <div><button class="num_btn" onclick="addToInput(5)">5</button></div>
+            <div><button class="num_btn" onclick="addToInput(6)">6</button></div>
+        </div>
+        <div class="flex">
+            <div><button class="num_btn" onclick="addToInput(7)">7</button></div>
+            <div><button class="num_btn" onclick="addToInput(8)">8</button></div>
+            <div><button class="num_btn" onclick="addToInput(9)">9</button></div>
+        </div>
+        <div class="flex">
+            <div class="flex"><button class="num_btn btn_0" onclick="addToInput(0)">0</button></div>
+        </div>
+        <button onclick="addToInput('+')">+</button>
+        <button onclick="addToInput('-')">-</button>
+        <button onclick="addToInput('*')">*</button>
+        <button onclick="addToInput('/')">/</button>
+        <div>
+            <button onclick="Calculate()">Calculate</button>
+        </div>
+    </div>
+</body>
+
+</html>
