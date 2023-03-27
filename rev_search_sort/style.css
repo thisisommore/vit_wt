@@ -1,0 +1,21 @@
+input,textarea {
+    border: none;
+    background-color: rgb(227, 227, 227);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    transition: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgb(188, 188, 188);
+}

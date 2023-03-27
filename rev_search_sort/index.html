@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Elements as 1,2,3" id="elements_input">
+    <input type="text" placeholder="Search num" id="search_input">
+<br>
+    <button onclick="on_quick_sort()" style="margin-top: 20px;">Quick Sort</button>
+    <button onclick="on_bubble_sort()" style="margin-top: 20px;">Bubble Sort</button>
+    <button onclick="on_binary_search()">Binary Search</button>
+    <button onclick="on_linear_search()">Linear Search</button>
+    <button onclick="on_reverse()">Reverse</button>
+    <div style="margin-top: 20px;">
+        Sorted:
+        <p id="sorted"></p>
+    </div>
+
+    <div>
+        Found at index:
+        <p id="search"></p>
+    </div>
+
+    <div>
+        Reversed:
+        <p id="reverse"></p>
+    </div>
+   
+</body>
+</html>
