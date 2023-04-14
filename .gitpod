@@ -1,7 +1,0 @@
-ports:
-  - port: 3306
-    onOpen: ignore
-
-tasks:
-  - command: >
-      docker run --name gitpod-mysql --network host -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=myDatabase -d mysql:latest
